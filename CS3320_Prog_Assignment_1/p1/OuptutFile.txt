@@ -1,0 +1,21 @@
+
+
+
+  	 a 	 b 	 c 	 d 	 e 	 f 	 g 	 h 	 
+ 
+1 	 R 	 N 	 B 	 Q 	 K 	   	   	 R 	 
+ 
+2 	 P 	 P 	 P 	 P 	   	 P 	 P 	 P 	 
+ 
+3 	   	   	   	   	   	 N 	   	   	 
+ 
+4 	   	   	   	   	 P 	   	   	   	 
+ 
+5 	   	   	   	   	 P 	   	   	   	 
+ 
+6 	   	   	 P 	   	   	 N 	   	   	 
+ 
+7 	 P 	   	 P 	 P 	   	 P 	 P 	 P 	 
+ 
+8 	 R 	   	 B 	 Q 	 K 	 B 	   	 R 	 
+ 

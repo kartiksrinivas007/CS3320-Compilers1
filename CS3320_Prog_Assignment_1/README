@@ -1,0 +1,37 @@
+Roll No.:ES20BTECH11015
+Name:Kartik Srinivas
+
+--------------------------------------------------------------------------------
+
+P1: Chess
+---------
+Assumptions / Comments (if any):
+
+# Is the program complete? Are there any assumptions made? Any other comments?
+My program is complete it prints the output into "OutputFile.txt" and  the input moves are in "TestCase1.txt"
+Assumptions : The validity of the moves are not being checked, the program depends on the correct form of the input from the user
+
+Approach :
+# How do you solve this problem?
+there are only certain types of input , pawn promotions ,normal moves, and pawn moves.
+The grammar of the input dictates moves be written in the form <move><space><move>, therefore I have made all 9 combinations and written specific subroutines to modify the global variable "chessboard" accordingly. MPP_pawn MPP_normal and PP stand for "Modify piece Position - Normal" ,"Modify - Piece Position - Pawn" , and "Pawn Promotion".I could have used an if -else construct for handling pawn moves, but i thought that this would be more readable. Extracting the positions of the coordinates form the input from the user uses yytext[position].The rules are all defined in the top part of the program
+
+P2: Calculator
+--------------
+Assumptions / Comments (if any):
+
+# Is the program complete? Are there any assumptions made? Any other comments?
+MY program is complete. The assumptions are that the input entered should be correct.
+The program prints the output into "OutputFile.c" and the input is taken from "Testcase1.txt"
+Only simple If - else constructs are being used , no ladders.
+an If does not require an else.
+
+Approach :
+# How do you solve this problem?
+firstly we use %option caseless to handle case insensitivity, secondly the grammar of the rules is encoded one by one,
+There were a few complications involving the recognization of the "     0       0       1       1" . In order to print the string in linear order with no spaces
+I had to store the seen value into an array called "stored_val" and then print only after all the digits of a particular segment have been seen.
+There are several Macros defined in the program for the appropriate "code" part in C. I thought that this will improve the readability.
+Moreover, in a statement of the form delay (40), To extract the "40" part , i had to write a function that returns a null terminated substring,from yytext.
+In order to handle the "{" brackets I had to define a boolean flag every time a certain if statement was used, and close the brackets after the write operation only if the flag was true. The termination of the lex() means that the return and endwhile statements have to  be encoded.That is done in main()after the end of yylex().
+                                                                                    
